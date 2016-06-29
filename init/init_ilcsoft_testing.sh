@@ -132,7 +132,7 @@ export LD_LIBRARY_PATH="$GSL_HOME/lib:$LD_LIBRARY_PATH"
 #     CED
 #--------------------------------------------------------------------------------
 export PATH="/cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09/CED/v01-09-02/bin:$PATH"
-export LD_LIBRARY_PATH="/cvmfs/ilc.desy.de/sm/x86_64_gcc44_sl6/v01-17-09/CED/v01-09-01/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/cvmfs/ilc.desy.de/sw/x86_64_gcc44_sl6/v01-17-09/CED/v01-09-02/lib:$LD_LIBRARY_PATH"
 
 
 #--------------------------------------------------------------------------------
