@@ -43,7 +43,7 @@
   <global>
    <!--   /afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/testSiD_o1_v01.slcio </parameter> -->
     <parameter name="LCIOInputFiles">
-      ~/lcgeo/example/mcparticles.slcio </parameter>
+      /usersc/gp13181/lcgeo/example/mcparticles.slcio </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
@@ -57,7 +57,7 @@
     <!--InitializeDD4hep reads a compact xml file and initializes the DD4hep::LCDD object-->
     <!--Name of the DD4hep compact xml file to load-->
     <!-- <parameter name="DD4hepXMLFile" type="string">/afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/SiD/compact/SiD_o1_v01/SiD_o1_v01.xml -->
-    <parameter name="DD4hepXMLFile" type="string">~/lcgeo/SiD/compact/SiD_o1_v01/SiD_o1_v01.xml
+    <parameter name="DD4hepXMLFile" type="string">/usersc/gp13181/lcgeo/SiD/compact/SiD_o1_v01/SiD_o1_v01.xml
  </parameter>
   </processor>
 
