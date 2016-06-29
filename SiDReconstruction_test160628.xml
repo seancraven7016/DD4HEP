@@ -43,7 +43,7 @@
   <global>
    <!--   /afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/testSiD_o1_v01.slcio </parameter> -->
     <parameter name="LCIOInputFiles">
-      /afs/phas.gla.ac.uk/user/r/robson/TryDesy/ClicPerformance/testSiD_o1_v01-160528.slcio </parameter>
+      ~/lcgeo/example/mcparticles.slcio </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
