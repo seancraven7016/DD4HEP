@@ -22,7 +22,7 @@ def get_data(fileName): #COMBINE WITH ABOVE FUNCTION!!!!!!
 
 	for event in reader:
 		MCParticles = event.getCollection("MCParticle")
-		track = event.getCollection("Tracks")
+		track = event.getCollection("SiTracks")
 		muonCount = 0
 		trackCount = 0
 		for particle in MCParticles:
