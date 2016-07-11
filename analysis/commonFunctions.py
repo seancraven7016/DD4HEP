@@ -1,3 +1,4 @@
+# Original file written by Josh Tingey (see pixelStudies). Modified by Gabriel Penn for use with DD4hep.
 import os, sys, argparse, os.path
 import ROOT
 import array
@@ -67,7 +68,7 @@ def get_fileData(fileName):
 	for event in reader:
 		if eventCounter == 0:
 			detector = event.getDetectorName()
-			MCParticle = event.getCollection("MCParticlesSkimmed")
+			MCParticle = event.getCollection("MCParticle")
 			energy = 0
 			for particle in MCParticle:
 				if particle.getParents().size() == 0:
