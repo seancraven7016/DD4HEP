@@ -184,7 +184,7 @@
 
   <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> sitracks.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> recoutput/sitracks.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
     <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
     <parameter name="Verbosity" type="string">WARNING </parameter>
@@ -229,7 +229,7 @@
     <!-- compression of output file 0: false >0: true (default) -->
     <parameter name="Compress" type="int" value="1"/>
     <!-- filename without extension-->
-    <parameter name="FileName" type="string" value="histograms500GeV_ttbar"/>
+    <parameter name="FileName" type="string" value="recoutput/histograms500GeV_ttbar"/>
     <!-- type of output file xml (default) or root ( only OpenScientist)-->
     <parameter name="FileType" type="string" value="root "/>
   </processor>
