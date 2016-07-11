@@ -53,7 +53,7 @@ def track_validation(fileName, numEvents):
 	for event in reader:
 		update_progress(count / numEvents)
 		count += 1
-		MCParticles = event.getCollection("MCParticlesSkimmed")
+		MCParticles = event.getCollection("MCParticle")
 		truthLink = event.getCollection("TrackMCTruthLink")
 		for MCparticle in MCParticles:
 			if (MCparticle.getPDG() == 211 or MCparticle.getPDG() == -211):
