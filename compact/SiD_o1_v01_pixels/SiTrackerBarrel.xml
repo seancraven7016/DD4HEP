@@ -31,8 +31,8 @@
       <position z="0.1005*cm"/>
     </module_component>
     <!--module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
-      <position z="0.12974*cm"/-->
-    </module_component>
+      <position z="0.12974*cm"/>
+    </module_component-->
     <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
       <position z="0.1235*cm"/>
     </module_component>
@@ -61,8 +61,8 @@
       <position z="0.1005*cm"/>
     </module_component>
     <!--module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
-      <position z="0.12974*cm"/-->
-    </module_component>
+      <position z="0.12974*cm"/>
+    </module_component-->
     <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
       <position z="0.1235*cm"/>
     </module_component>
@@ -91,8 +91,8 @@
       <position z="0.1005*cm"/>
     </module_component>
     <!--module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
-      <position z="0.12974*cm"/-->
-    </module_component>
+      <position z="0.12974*cm"/>
+    </module_component-->
     <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
       <position z="0.1235*cm"/>
     </module_component>
@@ -121,8 +121,8 @@
       <position z="0.1005*cm"/>
     </module_component>
     <!--module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
-      <position z="0.12974*cm"/-->
-    </module_component>
+      <position z="0.12974*cm"/>
+    </module_component-->
     <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
       <position z="0.1235*cm"/>
     </module_component>
@@ -151,8 +151,8 @@
       <position z="0.1005*cm"/>
     </module_component>
     <!--module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
-      <position z="0.12974*cm"/-->
-    </module_component>
+      <position z="0.12974*cm"/>
+    </module_component-->
     <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
       <position z="0.1235*cm"/>
     </module_component>
