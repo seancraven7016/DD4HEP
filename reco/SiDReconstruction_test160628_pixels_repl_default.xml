@@ -334,6 +334,7 @@
     <parameter name="V0VertexCollections" type="StringVec">V0Vertices</parameter>
     <parameter name="ClusterCollectionName" type="String">PandoraClusters</parameter>
     <parameter name="PFOCollectionName" type="String">PandoraPFOs</parameter>
+    <parameter name="TracksMCTruthLinkCollectionName" type="StringVec">SiTracksMCTruthLink</parameter><!-- Added by GP -->
     <!-- Calibration constants -->
     <parameter name="ECalToMipCalibration" type="float">163.934</parameter>
     <parameter name="HCalToMipCalibration" type="float">43.29</parameter>
