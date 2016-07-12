@@ -235,8 +235,8 @@
     <parameter name="FileType" type="string" value="root "/>
   </processor>
 
-  <processor name="MyDiagnostics_Si" type="DiagnosticsCLIC">
-    <!-- <processor name="MyDiagnostics_Si" type="Diagnostics"> -->
+  <!-- <processor name="MyDiagnostics_Si" type="DiagnosticsCLIC"> -->
+  <processor name="MyDiagnostics_Si" type="Diagnostics">
     <!--Name of the FullLDC track collection-->
     <parameter name="MarlinTrkTracks" type="string" lcioInType="Track"> SiTracks </parameter>
     <parameter name="MCTracksTruthLinkCollectionName" type="string" lcioInType="Track"> MCTruthSiTracksLink </parameter>
