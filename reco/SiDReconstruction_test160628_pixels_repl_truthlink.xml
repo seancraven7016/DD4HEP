@@ -185,7 +185,7 @@
 
   <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> recoutput/sitracks_default_example.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> recoutput/sitracks_truthlink_test.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
     <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
     <parameter name="Verbosity" type="string">WARNING </parameter>
