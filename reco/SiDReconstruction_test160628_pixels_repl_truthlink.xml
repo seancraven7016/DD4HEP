@@ -208,7 +208,7 @@
  <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">VXDTrackerHitsRelations SiTrackerBarrelHitsRelations VXDEndcapTrackerHitsRelations SiTrackerEndcapHitsRelations</parameter>
     <!-- <parameter name="TrackerHitCollectionNames" type="StringVec" lcioInType="TrackerHitPlane">SiVertexBarrelHits SiTrackerBarrelHits SiVertexEndcapHits SiTrackerEndcapHits</parameter> -->
     <!-- <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">SiTrackRelations</parameter> <!-- not what is needed -->
-    <parameter name="Verbosity" type="string">WRNING </parameter>
+    <parameter name="Verbosity" type="string">WARNING </parameter>
   </processor>
 
   <!-- == Pattern recognition parameters == -->
