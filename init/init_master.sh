@@ -1,3 +1,36 @@
+#   -------------------------------------------------------------------------------------------------------------------------------------
+
+# Setup taken from /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
+
+gcc_config_version=4.8.4
+LCGPLAT=x86_64-slc6-gcc48-opt
+LCG_lib_name=lib64
+LCG_arch=x86_64
+
+THIS_BASH=$BASH
+if [[ $THIS_BASH == "" ]]; then
+    THIS_HERE=$(dirname $0)
+else
+    THIS_HERE=$(dirname ${BASH_SOURCE[0]})
+fi
+
+
+LCG_gcc_home=$THIS_HERE
+
+export PATH=${LCG_gcc_home}/bin:${PATH}
+export COMPILER_PATH=${LCG_gcc_home}/lib/gcc/${LCG_arch}-unknown-linux-gnu/${gcc_config_version}
+
+if [ ${LD_LIBRARY_PATH} ]
+then
+export LD_LIBRARY_PATH=${LCG_gcc_home}/${LCG_lib_name}:${LD_LIBRARY_PATH}
+else
+export LD_LIBRARY_PATH=${LCG_gcc_home}/${LCG_lib_name}
+fi
+
+#   -------------------------------------------------------------------------------------------------------------------------------------
+
+# Initialisation taken from /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09/init_ilcsoft.sh and modified
+
 export ILCSOFT=/cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09
 
 
@@ -292,3 +325,9 @@ export LD_LIBRARY_PATH=$PYTHONDIR/lib:$LD_LIBRARY_PATH
 export PYTOOLSDIR=/cvmfs/sft.cern.ch/lcg/releases/LCG_84/pytools/1.9_python2.7/x86_64-slc6-gcc48-opt
 export PYTHONPATH=/cvmfs/sft.cern.ch/lcg/releases/LCG_84/pytools/1.9_python2.7/x86_64-slc6-gcc48-opt/lib/python2.7/site-packages:$PYTHONPATH 
 export PATH=$PYTOOLSDIR/bin:$PATH
+
+#   -------------------------------------------------------------------------------------------------------------------------------------
+
+# Initialise lcgeo:
+
+source ~/lcgeo/bin/thislcgeo.sh
