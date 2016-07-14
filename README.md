@@ -53,7 +53,23 @@ In a clean login shell, navigate to your lcgeo directory and initialise your env
 cd ~/lcgeo
 source __path to your local copy of this repository__/summer-student/init/init_master.sh
 ```
-
+Run the example particle gun script:
+```
+python example/lcio_particle_gun.py
+```
+Run the simulation with the default geometry and the example input particles you have just generated:
+```
+ddsim --compactFile=SiD/compact/SiD_o1_v01/SiD_o1_v01.xml --runType=batch --inputFile mcparticles.slcio -N=1 --outputFile=testSiD_o1_v01.slcio
+```
+If this has worked, you will now have a file named testSiD_o1_v01.slcio. You can find out what data this output file contains in summary:
+```
+anajob testSiD_o1_v01.slcio
+```
+or in full detail:
+```
+dumpevent testSiD_o1_v01.slcio 1
+```
+You should now be ready to try running a reconstruction.
 
 *Note: Managing environments can be troublesome. You will need to make sure you have the correct environment variables set each time you run ssh, and be careful not to initialise twice in one login. I have provided a master initialisation script, init/init_master.sh, to collate the environment variables for all steps in the sim/reco/analysis chain into one script. You may find it useful to add an alias to your bash profile to further simplify things, e.g.
 ```
