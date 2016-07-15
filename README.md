@@ -1,6 +1,6 @@
 # summer-student
 
-This is a repository of Gabriel Penn's summer 2016 work on adapting existing work on SiD for use with the DD4hep toolkit.
+This is a repository of Gabriel Penn's summer 2016 work on adapting existing work on SiD for use with the DD4hep toolkit. Please feel free to direct any queries to gp13181@bristol.ac.uk.
 
 # Directories:
  - init: initialisation scripts for environment setup
@@ -12,7 +12,7 @@ This is a repository of Gabriel Penn's summer 2016 work on adapting existing wor
  - analysis: pyLCIO analysis scripts, adapted from Josh Tingey's pixel studies (see pixelStudies repo)
  - anaoutput: output files from analysis scripts
 
-# Getting Started
+# Getting started
 These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install DD4hep, LCIO, Marlin etc locally.
 
 These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](https://twiki.ppe.gla.ac.uk/bin/view/LinearCollider/GlaSiDGettingStarted), which you may find to be more up-to-date but less tailored to our setups.
@@ -71,9 +71,19 @@ dumpevent testSiD_o1_v01.slcio 1
 ```
 You should now be ready to try running a reconstruction.
 
+## Running an example reconstruction
+
+Now navigate into your local summer-student repository and find SiDReconstruction_test160628.xml. You will need to edit this file so that the relevant file paths are correct for your local files. The LCIO input file is the 'testSiD_o1_v01.slcio' you just generated. For the compact files, you can use either those in lcgeo/SiD or in summer-student/compact. You can then run the reconstruction:
+```
+Marlin SiDReconstruction_test160628.xml
+```
+(Don't worry about the ECal errors: this part of the reconstruction is still under development.)
+
+You should now have a file named 'sitracks.slcio' that you can run anajob on (as above) to check its contents.
+
+# Running the chain
+
 *Note: Managing environments can be troublesome. You will need to make sure you have the correct environment variables set each time you run ssh, and be careful not to initialise twice in one login. I have provided a master initialisation script, init/init_master.sh, to collate the environment variables for all steps in the sim/reco/analysis chain into one script. You may find it useful to add an alias to your bash profile to further simplify things, e.g.
 ```
 alias ilcsetup='source ~/summer-student/init/'
 ```
-
-Detailed instructions to follow. Please feel free to direct any queries to gp13181@bristol.ac.uk.
