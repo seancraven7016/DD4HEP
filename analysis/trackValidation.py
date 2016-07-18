@@ -54,7 +54,7 @@ def track_validation(fileName, numEvents):
 		update_progress(count / numEvents)
 		count += 1
 		MCParticles = event.getCollection("MCParticle")
-		truthLink = event.getCollection("SiTracksMCTruthLink")
+		truthLink = event.getCollection("SiTrackRelations")
 		for MCparticle in MCParticles:
 			if (MCparticle.getPDG() == 211 or MCparticle.getPDG() == -211):
 				pionCount += 1
