@@ -32,8 +32,8 @@
 
     <!-- ========== monitoring  ========== -->
    <!-- <processor name="MyClicEfficiencyCalculator"/> -->
-   <!--  <processor name="MyTrackChecker"/> -->
-   <processor name="MyDiagnostics_Si"/>
+   <!-- <processor name="MyTrackChecker"/> -->
+   <!-- <processor name="MyDiagnostics_Si"/> -->
 
     <!-- ========== output  ========== -->
     <processor name="MyLCIOOutputProcessor"/>
@@ -205,9 +205,9 @@
     <!-- <parameter name="TrackerHitCollectionNames" type="StringVec" lcioInType="TrackerHitPlane">VXDTrackerHits ITrackerHits OTrackerHits VXDEndcapTrackerHits ITrackerEndcapHits OTrackerEndcapHits</parameter> -->
     <parameter name="TrackerHitCollectionNames" type="StringVec" lcioInType="TrackerHitPlane">VXDTrackerHitsPlanes SiTrackerBarrelHitsPlanes VXDEndcapTrackerHitsPlanes SiTrackerEndcapHitsPlanes</parameter> 
     <!-- <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">VXDTrackerHitRelations InnerTrackerBarrelHitsRelations OuterTrackerBarrelHitsRelations VXDEndcapTrackerHitRelations InnerTrackerEndcapHitsRelations OuterTrackerEndcapHitsRelations </parameter> -->
- <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">VXDTrackerHitsRelations SiTrackerBarrelHitsRelations VXDEndcapTrackerHitsRelations SiTrackerEndcapHitsRelations</parameter>
+    <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">VXDTrackerHitsRelations SiTrackerBarrelHitsRelations VXDEndcapTrackerHitsRelations SiTrackerEndcapHitsRelations</parameter>
     <!-- <parameter name="TrackerHitCollectionNames" type="StringVec" lcioInType="TrackerHitPlane">SiVertexBarrelHits SiTrackerBarrelHits SiVertexEndcapHits SiTrackerEndcapHits</parameter> -->
-    <!-- <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">SiTrackRelations</parameter> <!-- not what is needed -->
+    <parameter name="SimTrackerHitRelCollectionNames" type="StringVec" lcioInType="LCRelation">SiTrackRelations</parameter> <!-- not what is needed -->
     <parameter name="Verbosity" type="string">WARNING </parameter>
   </processor>
 
