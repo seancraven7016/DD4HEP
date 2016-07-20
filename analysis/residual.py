@@ -106,6 +106,9 @@ def parparRes(posData, layer, par1, par2):
 	return residuals
 
 def res_graph(residuals, name, bins, width):
+	# Some checks:
+	print "Length of residuals: ", len(residuals)
+	
 	hist = ROOT.TH1F(name, name, bins, -width, width)
 	for res in residuals:
 		hist.Fill(res)
