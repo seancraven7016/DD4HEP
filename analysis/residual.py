@@ -176,14 +176,16 @@ def main():
 		reader = IOIMPL.LCFactory.getInstance().createLCReader()
 		reader.open(fileName)
 		
-		print "Events to be processed:", len(reader)
+		event_tally = 0
 
 		for event in reader:
 			posData = getHitPositions(event)
 			residualsRZ.extend(parparRes(posData, 3, 3, 2))
 			residualsXY.extend(parparRes(posData, 3, 1, 0))
+			event_tally += 1
 
-
+		print event_tally, "events processed."
+		
 		sigma, sigmaError = res_graph(residualsRZ, "res", 50, 0.1)
 		size = fileName[73:-21]
 		size = "0." + size
