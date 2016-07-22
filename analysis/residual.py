@@ -185,6 +185,8 @@ def main():
 			event_tally += 1
 
 		print event_tally, "events processed."
+		print "Length of residualsRZ:", len(residualsRZ)
+		print "Length of residualsXY:", len(residualsXY)
 		
 		sigma, sigmaError = res_graph(residualsRZ, "res", 50, 0.1)
 		size = fileName[73:-21]
