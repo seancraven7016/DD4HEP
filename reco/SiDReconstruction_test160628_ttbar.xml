@@ -43,7 +43,7 @@
   <global>
    <!--   /afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/testSiD_o1_v01.slcio </parameter> -->
     <parameter name="LCIOInputFiles">
-      /usersc/gp13181/ILC/summer-student/simoutput/ttbar_500GeV_00.slcio </parameter>
+      /storage/gp13181/simoutput/ttbar_500GeV_00_N10.slcio </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
@@ -184,7 +184,7 @@
 
   <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> recoutput/ttbar_500GeV_00.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> /storage/gp13181/recoutput/ttbar_500GeV_00_N10_reco.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
     <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
     <parameter name="Verbosity" type="string">WARNING </parameter>
