@@ -180,8 +180,8 @@ def main():
 
 		for event in reader:
 			posData = getHitPositions(event)
-			print "posData:"
-			print posData
+			print "Length of posData:"
+			print len(posData)
 			residualsRZ.extend(parparRes(posData, 3, 3, 2))
 			residualsXY.extend(parparRes(posData, 3, 1, 0))
 			event_tally += 1
