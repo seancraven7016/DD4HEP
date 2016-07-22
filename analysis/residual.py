@@ -96,6 +96,7 @@ def parparRes(posData, layer, par1, par2):
 			zActual = posData[res][par2]
 			zFit = (posData[res][par1] - szGraph.GetFunction("pol1").GetParameter(0)) / szGraph.GetFunction("pol1").GetParameter(1)
 			residual = zFit - zActual
+			print "Residual:", residual
 			if fabs(residual) < 1: 
 				residuals.append(residual)
 
@@ -180,8 +181,8 @@ def main():
 
 		for event in reader:
 			posData = getHitPositions(event)
-			print "Length of posData:"
-			print len(posData)
+			#print "Length of posData:", len(posData)
+			
 			residualsRZ.extend(parparRes(posData, 3, 3, 2))
 			residualsXY.extend(parparRes(posData, 3, 1, 0))
 			event_tally += 1
