@@ -6,11 +6,8 @@ This is a repository of Gabriel Penn's summer 2016 work on adapting existing wor
  - init: initialisation scripts for environment setup
  - compact: detector descriptions (adapted from the SiD description included with lcgeo)
  - particlegun: particle gun scripts for ddsim and the LCIO particle input files they generate
- - simoutput: output LCIO files from ddsim/input files for reconstruction
  - reco: reconstruction steering files for Marlin
- - recoutput: output LCIO files from Marlin reco/input files for analysis
  - analysis: pyLCIO analysis scripts, adapted from Josh Tingey's pixel studies (see pixelStudies repo)
- - anaoutput: output files from analysis scripts
 
 # Getting started
 These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install DD4hep, LCIO, Marlin etc locally.
