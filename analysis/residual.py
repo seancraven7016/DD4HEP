@@ -98,7 +98,7 @@ def parparRes(posData, layer, par1, par2):
 			zFit = (posData[res][par1] - szGraph.GetFunction("pol1").GetParameter(0)) / szGraph.GetFunction("pol1").GetParameter(1)
 			residual = zFit - zActual
 			print "Residual:", residual
-			if true #fabs(residual) < 1: 
+			if true: #fabs(residual) < 1: 
 				residuals.append(residual)
 
 		szGraph.Delete()
