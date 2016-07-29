@@ -78,6 +78,7 @@ def parparRes(posData, layer, par1, par2):
 	hitCount = 0
 	if len(posData) < 8:
 		for hit in posData:
+			print "posData:", posData
 			#hitCount += 1
 			if posData[hit][3] < (layers[layer]-100) or posData[hit][3] > (layers[layer]+100):
 				rad.append(posData[hit][par1])
