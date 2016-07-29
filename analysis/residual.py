@@ -23,10 +23,10 @@ def getHitPositions(event):
 		position = hit.getPosition() # Gets DIGITISED position of hit, in (mm).
 		if math.sqrt(pow(position[0],2) + pow(position[1],2)) > 150:
 			hitCount += 1
-			posData[hitCount].append(position[0]/10) # x
-			posData[hitCount].append(position[1]/10) # y
-			posData[hitCount].append(position[2]/10) # z
-			posData[hitCount].append(math.sqrt(pow(position[0]/10,2) + pow(position[1]/10,2))) # r
+			posData[hitCount].append(position[0]) # x
+			posData[hitCount].append(position[1]) # y
+			posData[hitCount].append(position[2]) # z
+			posData[hitCount].append(math.sqrt(pow(position[0],2) + pow(position[1],2))) # r
 			posData[hitCount].append(math.atan(position[1] / position[0])) # theta
 	return posData
 
@@ -98,7 +98,7 @@ def parparRes(posData, layer, par1, par2):
 			zFit = (posData[res][par1] - szGraph.GetFunction("pol1").GetParameter(0)) / szGraph.GetFunction("pol1").GetParameter(1)
 			residual = zFit - zActual
 			print "Residual:", residual
-			if fabs(residual) < 1: 
+			if true #fabs(residual) < 1: 
 				residuals.append(residual)
 
 		szGraph.Delete()
