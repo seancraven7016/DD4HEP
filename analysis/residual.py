@@ -195,7 +195,8 @@ def main():
 		sigma, sigmaError = res_graph(residualsRZ, "res", 50, 0.1)
 		size = fileName[73:-21]
 		size = "0." + size
-		print size
+		print "Size:", size
+		print "Sigma:", sigma
 		residuals.append(sigma)
 		resErrors.append(sigmaError)
 		sizes.append(size)
