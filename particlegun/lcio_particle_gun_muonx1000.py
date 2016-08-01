@@ -17,9 +17,9 @@ from array import array
 from pyLCIO import UTIL, EVENT, IMPL, IO, IOIMPL
 
 #---- number of events per momentum bin -----
-nevt = 1
+nevt = 1000
 
-outfile = "/storage/gp13181/particles/muon_x1.slcio"
+outfile = "/storage/gp13181/particles/muon_x1000_1TeV.slcio"
 
 #--------------------------------------------
 
@@ -36,7 +36,7 @@ random.seed()
 #========== particle properties ===================
 
 #momenta = [ 1. , 3., 5., 10., 15., 25., 50., 100. ]
-momenta = [ 5. ]
+momenta = [ 1000. ]
 
 genstat  = 1
 pdg = -13
