@@ -67,6 +67,8 @@ def comparison_graph(moms, values, directory):
 	graphs = {}
 	graphCount = 0
 	leg = ROOT.TLegend()
+	
+	print "Length of moms:", len(moms)
 
 	for description in moms:
 		print description
