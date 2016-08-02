@@ -74,6 +74,8 @@ def comparison_graph(moms, values, directory):
 		print description
 		momArray = array.array("f", moms[description])
 		valueArray = array.array("f",values[description])
+		print "Length of momArray:", len(momArray)
+		
 		graphs[description] = ROOT.TGraph(7, momArray, valueArray)
 		graphs[description].SetMarkerColor(graphCount + 1)
 		graphs[description].SetName(description)
