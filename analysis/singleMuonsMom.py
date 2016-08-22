@@ -144,6 +144,7 @@ def main():
 		moms[str(theta) + "_" + checkname].append(totalMom)
 		print str(theta) + "_" + checkname
 		values[str(theta) + "_" + checkname].append(value)
+		print "Theta (as inputted into checkname):", theta
 
 
 	comparison_graph(moms, values, args.inputDir)
