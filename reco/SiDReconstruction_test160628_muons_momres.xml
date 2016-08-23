@@ -43,7 +43,7 @@
   <global>
    <!--   /afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/testSiD_o1_v01.slcio </parameter> -->
     <parameter name="LCIOInputFiles">
-      /storage/gp13181/simoutput/muon_momsets/muons_100MeV_sim.slcio </parameter>
+      /storage/gp13181/simoutput/muon_momsets/muons_100MeV_sim_new.slcio </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
@@ -184,7 +184,7 @@
 
   <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> /storage/gp13181/recoutput/muons/for_singleMuonsMom/muons_100MeV_reco_original_geometry_strips.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> /storage/gp13181/recoutput/muons/for_singleMuonsMom/muons_100MeV_reco_new_original_geometry_strips.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
     <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
     <parameter name="Verbosity" type="string">WARNING </parameter>
