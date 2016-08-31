@@ -19,7 +19,7 @@ from pyLCIO import UTIL, EVENT, IMPL, IO, IOIMPL
 #---- number of events per momentum bin -----
 nevt = 1000
 
-outfile = "/storage/gp13181/particles/muon_momsets/muons_19GeV.slcio"
+outfile = "/storage/gp13181/particles/muonx1000_100GeV_60deg.slcio"
 
 #--------------------------------------------
 
@@ -36,14 +36,14 @@ random.seed()
 #========== particle properties ===================
 
 #momenta = [ 1. , 2., 5., 10., 20., 50., 100. ]
-momenta = [19. ]
+momenta = [100. ]
 
 genstat  = 1
 pdg = -13
 charge = +1.
 #pdg = 211
 mass =  0.105658 
-theta = 0.5 * math.pi 
+theta = 0.5 * (2./3.) * math.pi 
 #theta = 20./180. * math.pi 
 
 decayLen = 1.e32 
