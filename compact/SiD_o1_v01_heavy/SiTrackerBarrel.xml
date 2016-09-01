@@ -12,151 +12,151 @@
 
   <module name="SiTrackerModule_Layer1">
     <module_envelope width="97.97*mm" length="97.97*mm" thickness="0.3*cm"/>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="PEEK" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="Lead" sensitive="false">
       <position z="-0.14*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="-0.122*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Rohacell31_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Lead" sensitive="false">
       <position z="-0.024*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Epoxy" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Lead" sensitive="false">
       <position z="0.07475*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="0.0915*cm" />
     </module_component>
     <module_component width="92.031*mm" length="92.031*mm" thickness="0.03*cm" material="Silicon" sensitive="true">
       <position z="0.1145*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Lead" sensitive="false">
       <position z="0.12974*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Kapton" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0038*cm" material="Lead" sensitive="false">
       <position z="0.1375*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00038*cm" material="Copper" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00038*cm" material="Lead" sensitive="false">
       <position z="0.146*cm"/>
     </module_component>
   </module>
   <module name="SiTrackerModule_Layer2">
     <module_envelope width="97.97*mm" length="97.97*mm" thickness="0.3*cm"/>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="PEEK" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="Lead" sensitive="false">
       <position z="-0.14*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="-0.122*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Rohacell31_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Lead" sensitive="false">
       <position z="-0.024*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Epoxy" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Lead" sensitive="false">
       <position z="0.07475*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="0.0915*cm" />
     </module_component>
     <module_component width="92.031*mm" length="92.031*mm" thickness="0.03*cm" material="Silicon" sensitive="true">
       <position z="0.1145*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Lead" sensitive="false">
       <position z="0.12974*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0051*cm" material="Kapton" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0051*cm" material="Lead" sensitive="false">
       <position z="0.1375*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00052*cm" material="Copper" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00052*cm" material="Lead" sensitive="false">
       <position z="0.146*cm"/>
     </module_component>
   </module>
   <module name="SiTrackerModule_Layer3">
     <module_envelope width="97.97*mm" length="97.97*mm" thickness="0.3*cm"/>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="PEEK" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="Lead" sensitive="false">
       <position z="-0.14*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="-0.122*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Rohacell31_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Lead" sensitive="false">
       <position z="-0.024*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Epoxy" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Lead" sensitive="false">
       <position z="0.07475*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="0.0915*cm" />
     </module_component>
     <module_component width="92.031*mm" length="92.031*mm" thickness="0.03*cm" material="Silicon" sensitive="true">
       <position z="0.1145*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Lead" sensitive="false">
       <position z="0.12974*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0064*cm" material="Kapton" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0064*cm" material="Lead" sensitive="false">
       <position z="0.1375*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00065*cm" material="Copper" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00065*cm" material="Lead" sensitive="false">
       <position z="0.146*cm"/>
     </module_component>
   </module>
   <module name="SiTrackerModule_Layer4">
     <module_envelope width="97.97*mm" length="97.97*mm" thickness="0.3*cm"/>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="PEEK" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="Lead" sensitive="false">
       <position z="-0.14*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="-0.122*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Rohacell31_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Lead" sensitive="false">
       <position z="-0.024*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Epoxy" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Lead" sensitive="false">
       <position z="0.07475*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="0.0915*cm" />
     </module_component>
     <module_component width="92.031*mm" length="92.031*mm" thickness="0.03*cm" material="Silicon" sensitive="true">
       <position z="0.1145*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Lead" sensitive="false">
       <position z="0.12974*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0078*cm" material="Kapton" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0078*cm" material="Lead" sensitive="false">
       <position z="0.1375*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00079*cm" material="Copper" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00079*cm" material="Lead" sensitive="false">
       <position z="0.146*cm"/>
     </module_component>
   </module>
   <module name="SiTrackerModule_Layer5">
     <module_envelope width="97.97*mm" length="97.97*mm" thickness="0.3*cm"/>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="PEEK" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.02*cm" material="Lead" sensitive="false">
       <position z="-0.14*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="-0.122*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Rohacell31_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.18*cm" material="Lead" sensitive="false">
       <position z="-0.024*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Epoxy" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0175*cm" material="Lead" sensitive="false">
       <position z="0.07475*cm" />
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="CarbonFiber_50D" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.016*cm" material="Lead" sensitive="false">
       <position z="0.0915*cm" />
     </module_component>
     <module_component width="92.031*mm" length="92.031*mm" thickness="0.03*cm" material="Silicon" sensitive="true">
       <position z="0.1145*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Silicon" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00048*cm" material="Lead" sensitive="false">
       <position z="0.12974*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0091*cm" material="Kapton" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.0091*cm" material="Lead" sensitive="false">
       <position z="0.1375*cm"/>
     </module_component>
-    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00093*cm" material="Copper" sensitive="false">
+    <module_component width="97.97*mm" length="97.97*mm" thickness="0.00093*cm" material="Lead" sensitive="false">
       <position z="0.146*cm"/>
     </module_component>
   </module>
