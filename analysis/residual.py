@@ -17,7 +17,7 @@ def getHitPositions(event):
 	# Get the Position data for all hits in event, calculate r and theta also,
 	# Add these to dict (posData).
 	barrelHits = event.getCollection("SiTrackerBarrelHitsPlanes")
-	print "Length of hit collection:", len(barrelHits)
+	#print "Length of hit collection:", len(barrelHits)
 	hitCount = 0
 	posData = defaultdict(list)
 	for hit in barrelHits:
@@ -79,7 +79,7 @@ def parparRes(posData, layer, par1, par2):
 	residuals = []
 	hitCount = 0
 	# Check for position data:
-	print "Length of posData:",len(posData)
+	#print "Length of posData:",len(posData)
 	if len(posData) < 8:
 		for hit in posData:
 			#print "posData:", posData
@@ -94,7 +94,7 @@ def parparRes(posData, layer, par1, par2):
 		radArray = array.array("f", rad)
 		zArray = array.array("f", z)
 		#Check for hit count:
-		print "hitCount:", hitCount
+		#print "hitCount:", hitCount
 		szGraph = ROOT.TGraph(hitCount, zArray, radArray)
 		szGraph.Fit("pol1","Q")
 		#szGraph.Draw()
