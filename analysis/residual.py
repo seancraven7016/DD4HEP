@@ -89,9 +89,8 @@ def parparRes(posData, layer, par1, par2):
 
 		radArray = array.array("f", rad)
 		zArray = array.array("f", z)
-		#Check for array length:
-		print "Length of radArray:", len(radArray)
-		print "Length of zArray:", len(zArray)
+		#Check for hit count:
+		print "hitCount:", hitCount
 		szGraph = ROOT.TGraph(hitCount, zArray, radArray)
 		szGraph.Fit("pol1","Q")
 		#szGraph.Draw()
