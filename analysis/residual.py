@@ -21,6 +21,7 @@ def getHitPositions(event):
 	posData = defaultdict(list)
 	for hit in barrelHits:
 		position = hit.getPosition() # Gets DIGITISED position of hit, in (mm).
+		print "HIT"
 		if math.sqrt(pow(position[0],2) + pow(position[1],2)) > 150:
 			hitCount += 1
 			posData[hitCount].append(position[0]) # x
