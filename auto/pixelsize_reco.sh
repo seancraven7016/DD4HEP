@@ -1,0 +1,7 @@
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.08.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.10.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.12.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.14.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.16.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.18.xml
+Marlin reco/pixel_size/SiDReconstruction_test160628_muons_pixels0.20.xml

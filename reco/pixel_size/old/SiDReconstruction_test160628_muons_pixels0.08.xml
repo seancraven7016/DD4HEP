@@ -108,11 +108,11 @@
     <!--resolution in direction of u-->
     <!-- <parameter name="ResolutionU" type="float">0.007 0.007 </parameter> -->
     <!-- Aidan: there are 5 layers -->
-    <parameter name="ResolutionU" type="float">0.035 0.035 0.035 0.035 0.035 0.035 </parameter>
+    <parameter name="ResolutionU" type="float">0.0023 0.0023 0.0023 0.0023 0.0023 0.0023 </parameter>
     <!--resolution in direction of v-->
     <!-- <parameter name="ResolutionV" type="float">0.3 0.3 </parameter> -->
     <!-- Aidan: there are 5 layers -->
-    <parameter name="ResolutionV" type="float">0.035 0.035 0.035 0.035 0.035 0.035</parameter>
+    <parameter name="ResolutionV" type="float">0.0023 0.0023 0.0023 0.0023 0.0023 0.0023</parameter>
     <!--Name of the Input SimTrackerHit collection-->
     <!-- <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> InnerTrackerBarrelCollection </parameter> -->
     <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> SiTrackerBarrelHits </parameter>
@@ -184,7 +184,7 @@
 
   <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> /storage/gp13181/recoutput/muons/for_residuals/muons_100GeV_reco_pixels0.12xxxxxxxxxxxxxxx.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> /storage/gp13181/recoutput/muons/for_residuals/muons_100GeV_reco_pixels0.08xxxxxxxxxxxxxxx.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
     <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
     <parameter name="Verbosity" type="string">WARNING </parameter>
