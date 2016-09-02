@@ -16,7 +16,7 @@ from collections import defaultdict
 def getHitPositions(event):
 	# Get the Position data for all hits in event, calculate r and theta also,
 	# Add these to dict (posData).
-	barrelHits = event.getCollection("SiTrackerBarrelHitsPlanes")
+	barrelHits = event.getCollection("SiTrackerBarrelHits")
 	print "Length of hit collection:", len(barrelHits)
 	hitCount = 0
 	posData = defaultdict(list)
