@@ -76,6 +76,8 @@ def parparRes(posData, layer, par1, par2):
 	resHit = []
 	residuals = []
 	hitCount = 0
+	# Check for position data:
+	print "Length of posData:",len(posData)
 	if len(posData) < 8:
 		for hit in posData:
 			#print "posData:", posData
