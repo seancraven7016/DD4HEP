@@ -8,6 +8,7 @@ This is a repository of Gabriel Penn's summer 2016 work on adapting existing wor
  - particlegun: particle gun scripts for ddsim and the LCIO particle input files they generate
  - reco: reconstruction steering files for Marlin
  - analysis: pyLCIO analysis scripts, adapted from Josh Tingey's pixel studies (see pixelStudies repo)
+ - auto: miscellaneous shell scripts for submitting multiple jobs
 
 # Getting started
 These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install DD4hep, LCIO, Marlin etc locally.
