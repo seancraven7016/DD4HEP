@@ -57,7 +57,7 @@
     <!--InitializeDD4hep reads a compact xml file and initializes the DD4hep::LCDD object-->
     <!--Name of the DD4hep compact xml file to load-->
     <!-- <parameter name="DD4hepXMLFile" type="string">/afs/phas.gla.ac.uk/user/b/bogdanm/public_ppe/work/lcgeo/SiD/compact/SiD_o1_v01/SiD_o1_v01.xml -->
-    <parameter name="DD4hepXMLFile" type="string">/usersc/gp13181/lcgeo/SiD/compact/SiD_o1_v01/SiD_o1_v01.xml
+    <parameter name="DD4hepXMLFile" type="string">/usersc/gp13181/ILC/summer-student/compact/SiD_o1_v01_heavy/SiD_o1_v01.xml
  </parameter>
   </processor>
 
