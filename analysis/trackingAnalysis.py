@@ -24,8 +24,8 @@ def track_validation(fileName, numEvents):
 	for event in reader:
 		commonFunctions.update_progress(count/numEvents)
 		count += 1
-		MCParticles = event.getCollection("MCParticlesSkimmed")
-		truthLink = event.getCollection("TrackMCTruthLink")
+		MCParticles = event.getCollection("MCParticle")
+		truthLink = event.getCollection("SiTrackRelations")
 		if truthLink.getNumberOfElements() != event.getCollection("Tracks").getNumberOfElements():
 			print "Error: Different number of track elements to truthLink elements!!!"
 		for MCparticle in MCParticles:
