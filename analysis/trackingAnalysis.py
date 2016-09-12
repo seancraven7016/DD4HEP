@@ -26,7 +26,7 @@ def track_validation(fileName, numEvents):
 		count += 1
 		MCParticles = event.getCollection("MCParticle")
 		truthLink = event.getCollection("SiTrackRelations")
-		if truthLink.getNumberOfElements() != event.getCollection("Tracks").getNumberOfElements():
+		if truthLink.getNumberOfElements() != event.getCollection("SiTracks").getNumberOfElements():
 			print "Error: Different number of track elements to truthLink elements!!!"
 		for MCparticle in MCParticles:
 			if (MCparticle.getPDG() == 211 or MCparticle.getPDG() == -211):
