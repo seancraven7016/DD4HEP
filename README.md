@@ -89,3 +89,12 @@ For simple input events (e.g. test muons), modify a copy of lcio_particle_gun.py
 
 ## Running a simulation
 
+From within the summer-student directory, run the following:
+
+```
+ddsim --compactFile=compact/[GEOMETRY] --runType=batch --inputFile=[INPUT PATH] -N=[EVENTS] --outputFile=[OUTPUT PATH]
+```
+ - [GEOMETRY]: the path to the master .xml file for the chosen geometry
+ - [INPUT PATH]: the path to the .slcio file containing the input particles
+ - [EVENTS]: the desired number of events (you will of course need to have enough events in the input file!)
+ - [OUTPUT PATH]: the path to the desired output file (must be .slcio)
