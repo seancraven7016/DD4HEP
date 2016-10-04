@@ -81,8 +81,11 @@ You should now have a file named 'sitracks.slcio' that you can run anajob on (as
 
 # Running the chain
 
-Here are some general instructions for running the simulatiom->reconstruction->analysis chain.
+Here are some general instructions for running the simulatiom->reconstruction->analysis chain. First off, you will need to set up your environment: I have provided a master initialisation script for this purpose, init/init_master_new.sh.
 
 ## Generating input particles
 
-For simple input events (e.g. test muons), modify a copy of lcio_particle_gun.py to generate the desired particles. It should be fairly straightforward to figure out how to change the particle type, momentum, angular distribution etc.
+For simple input events (e.g. test muons), modify a copy of lcio_particle_gun.py to generate the desired particles. It should be fairly straightforward to figure out how to change the particle type, momentum, angular distribution etc. You may wish to store your particle gun scripts and lcio files in summer-student/particles.
+
+## Running a simulation
+
