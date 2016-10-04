@@ -16,7 +16,7 @@ These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with
 These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](https://twiki.ppe.gla.ac.uk/bin/view/LinearCollider/GlaSiDGettingStarted), which you may find to be more up-to-date but less tailored to our setups.
 
 ## Installing lcgeo
-Start by setting up your environment*:
+Start by setting up your environment:
 ```
 source /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
 source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09/init_ilcsoft.sh
@@ -81,7 +81,8 @@ You should now have a file named 'sitracks.slcio' that you can run anajob on (as
 
 # Running the chain
 
-*Note: Managing environments can be troublesome. You will need to make sure you have the correct environment variables set each time you run ssh, and be careful not to initialise twice in one login. I have provided a master initialisation script, init/init_master.sh, to collate the environment variables for all steps in the sim/reco/analysis chain into one script. You may find it useful to add an alias to your bash profile to further simplify things, e.g.
-```
-alias ilcsetup='source ~/summer-student/init/'
-```
+Here are some general instructions for running the simulatiom->reconstruction->analysis chain.
+
+## Generating input particles
+
+For simple input events (e.g. test muons), modify a copy of lcio_particle_gun.py to generate the desired particles. It should be fairly straightforward to figure out how to change the particle type, momentum, angular distribution etc.
