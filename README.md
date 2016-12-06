@@ -87,6 +87,8 @@ Here are some general instructions for running the simulatiom->reconstruction->a
 
 For simple input events (e.g. test muons), modify a copy of lcio_particle_gun.py to generate the desired particles. It should be fairly straightforward to figure out how to change the particle type, momentum, angular distribution etc. You may wish to store your particle gun scripts and lcio files in summer-student/particles.
 
+For more complicated events (e.g. an ILC collision), you may need to seek out ready-made input files. Older ones may use the .stdhep format, which should be compatible but may cause problems in some cases.
+
 ## Running a simulation
 
 From within the summer-student directory, run the following:
@@ -98,3 +100,9 @@ ddsim --compactFile=compact/[GEOMETRY] --runType=batch --inputFile=[INPUT PATH] 
  - [INPUT PATH]: the path to the .slcio file containing the input particles
  - [EVENTS]: the desired number of events (you will of course need to have enough events in the input file!)
  - [OUTPUT PATH]: the path to the desired output file (must be .slcio)
+
+This will simulate the events, which can then be reconstructed.
+
+## Reconstructing events
+
+You will need to write a .xml steering file for use with the Marlin reconstruction software. I recommend modifying one of those available in the reco directory.
