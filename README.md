@@ -118,3 +118,7 @@ Marlin example.xml
 ```
 
 This will produce a final .slcio file containing the reconstructed tracks, which can then be analysed.
+
+# Analysis
+
+Analysis scripts written by Josh Tingey can be found in the analysis directory. See analysis/README.md for information and instructions. (Note: compatibility work on Josh's scripts is still a work in progress.)
