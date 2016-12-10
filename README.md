@@ -117,4 +117,4 @@ Then run your reconstruction using Marlin, e.g.
 Marlin example.xml
 ```
 
-
+This will produce a final .slcio file containing the reconstructed tracks, which can then be analysed.
