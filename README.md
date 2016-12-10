@@ -105,4 +105,16 @@ This will simulate the events, which can then be reconstructed.
 
 ## Reconstructing events
 
-You will need to write a .xml steering file for use with the Marlin reconstruction software. I recommend modifying one of those available in the reco directory.
+You will need to write a .xml steering file for use with the Marlin reconstruction software. I recommend modifying reco/SiDReconstruction_test160628.xml by changing the following parameters:
+ - LCIOInputFiles: path to the input file (the simulation output file)
+ - DD4hepXMLFile: path to the master geometry file - this MUST be the same one that was used for the simulation
+ - Under InnerPlanarDigiProcessor, ResolutionU and ResolutionV: the tracker's resolution in the u and v directions (change these e.g. to approximate pixels)
+ - LCIOOutputFile: path to the desired output file.
+ 
+Then run your reconstruction using Marlin, e.g.
+
+```
+Marlin example.xml
+```
+
+
