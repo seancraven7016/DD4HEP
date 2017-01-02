@@ -1,8 +1,16 @@
-Notes:
+This directory contains modified versions (some of which are still WIP) of Josh Tingey's analysis scripts. The originals can be found in Bristol-SiD-Development/pixelStudies. These versions have been changed for compatibility with DD4Hep, with small additions for debugging.
+
+## commonFunctions.py
+Contains miscellaneous functions used by the other files.
+
+## singleMuonsMom.py
+
+
+## Notes
  - commonFunctions.py: Working.
  - overlayAnalysis.py: Not yet adapted.
  - recoilAnalysis.py: Not yet adapted.
- - residual.py: Adaptation attempted but throws error when tested. Possibly working but needs suitable input data set.
+ - residual.py: Working.
  - singleMuonsMom.py: Working.
  - trackValidation.py: Adaptation attempted but required collections (truthlink) not present in reco output.
  - trackingAnalysis.py: Not yet adapted. Needs truthlink.
