@@ -11,7 +11,21 @@ This is a repository of Gabriel Penn's summer 2016 work on adapting existing wor
  - auto: miscellaneous shell scripts for submitting multiple jobs
 
 # Getting started
-These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install DD4hep, LCIO, Marlin etc locally.
+These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install , LCIO, Marlin etc locally.
+## Cloning Github repository 
+you will need to make a copy of the DD4Hep Repository on Github on your user account on soolin.
+First you need to add the ssh key to yor github account 
+this can be done by 
+```
+clip< ~/.ssh/id_rsa.pub
+```
+then log onto your github account. Navigate to settings, SSH and GPG keys, then NEW SSH Key paste into this box. (the clip commmand copies it to your clipboard).
+Then go back to your home directory 
+```
+
+git copy git@github.com:Bristol-SiD-Development/DD4HEP.git
+```
+ 
 
 These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](https://twiki.ppe.gla.ac.uk/bin/view/LinearCollider/GlaSiDGettingStarted), which you may find to be more up-to-date but less tailored to our setups.
 
@@ -19,13 +33,14 @@ These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](ht
 Start by setting up your environment:
 ```
 source /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
-source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09/init_ilcsoft.sh
+source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh
+source /cvmfs/sft.cern.ch/lcg/views/LCG_latest/x86_64-slc6-gcc49-opt/setup.sh
 ```
 
 Navigate to the directory in which you wish to install lcgeo (I recommend your home directory) and checkout the source code:
 ```
 cd ~
-svn co https://svnsrv.desy.de/basic/ddsim/lcgeo/trunk lcgeo
+git clone git@github.com:iLCSoft/lcgeo.git
 ```
 Remove some unfinished(?) calorimeter files:
 ```
@@ -35,12 +50,14 @@ rm lcgeo/detector/CaloTB/CaloPrototype*
 ```
 Create the build directory and move to it:
 ```
+git checkout v00-08
 mkdir build
 cd build
+
 ```
 Make the installation:
 ```
-cmake -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_C_COMPILER=`which gcc` -C /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/ILCSoft.cmake ..
+cmake -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_C_COMPILER=`which gcc` -C /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/ILCSoft.cmake ..
 make -j4
 make install
 ```
