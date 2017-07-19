@@ -13,7 +13,7 @@ This is a repository of Gabriel Penn's summer 2016 work on adapting existing wor
 # Getting started
 These instructions assume you are SSHing to a UoB SL6 machine (e.g. Soolin) with access to cvmfs. ILCSoft libraries are available on cvmfs, so you will not need to install , LCIO, Marlin etc locally.
 ## Cloning Github repository 
-you will need to make a copy of the DD4Hep Repository on Github on your user account on soolin.
+You will need to make a copy of the DD4Hep Repository on Github on your user account on soolin.
 First you need to add the ssh key to yor github account 
 this can be done by 
 ```
