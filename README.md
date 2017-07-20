@@ -44,6 +44,7 @@ git clone git@github.com:iLCSoft/lcgeo.git
 ```
 Remove some unfinished(?) calorimeter files:
 ```
+cd ~
 rm lcgeo/detector/calorimeter/SHcal*
 rm lcgeo/detector/calorimeter/SEcal*
 rm lcgeo/detector/CaloTB/CaloPrototype*
