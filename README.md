@@ -27,7 +27,7 @@ git clone git@github.com:Bristol-SiD-Development/DD4HEP.git
 ```
  
 
-These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](https://twiki.ppe.gla.ac.uk/bin/view/LinearCollider/GlaSiDGettingStarted), which you may find to be more up-to-date but less tailored to our setups.
+These instructions are based on [those provided by Dr Aidan Robson (Glasgow)](https://twiki.ppe.gla.ac.uk/bin/view/LinearCollider/GlaSiDGettingStarted), which you may find to be more up-to-date but less tailored to our setups. 
 
 ## Installing lcgeo
 Start by setting up your environment:
@@ -70,11 +70,12 @@ In a clean login shell, navigate to your lcgeo directory and initialise your env
 cd ~/lcgeo
 source __path to your local copy of__DD4HEP/init/init_master.sh
 ```
-You must run these in lcgeo at the start od every session. 
-````
+You must run these in lcgeo at the start of every session. 
+```
 source /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
 source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh
 ```
+
 Run the example particle gun script:
 
 ```
