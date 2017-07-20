@@ -74,6 +74,7 @@ You must run these in lcgeo at the start of every session.
 ```
 source /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
 source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh
+source bin/thislcgeo.sh
 ```
 
 Run the example particle gun script:
