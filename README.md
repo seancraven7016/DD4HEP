@@ -66,7 +66,7 @@ If this runs without throwing any errors, you should now be able to run the exam
 In a clean login shell, navigate to your lcgeo directory and initialise your environment (see below):
 ```
 cd ~/lcgeo
-source __path to your local copy of this repository__/summer-student/##init/init_master.sh
+source __path to your local copy of__DD4HEP/init/init_master.sh
 ```
 Run the example particle gun script:
 ```
