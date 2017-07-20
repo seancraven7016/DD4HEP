@@ -40,6 +40,7 @@ source /cvmfs/sft.cern.ch/lcg/views/LCG_latest/x86_64-slc6-gcc49-opt/setup.sh
 
 Navigate to the directory in which you wish to install lcgeo (I recommend your home directory) and checkout the source code:
 ```
+cd ~
 git clone git@github.com:iLCSoft/lcgeo.git
 ```
 Remove some unfinished(?) calorimeter files:
@@ -69,7 +70,13 @@ In a clean login shell, navigate to your lcgeo directory and initialise your env
 cd ~/lcgeo
 source __path to your local copy of__DD4HEP/init/init_master.sh
 ```
+You must run these in lcgeo at the start od every session. 
+````
+source /cvmfs/sft.cern.ch/lcg/releases/gcc/4.8.4/x86_64-slc6/setup.sh
+source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh
+```
 Run the example particle gun script:
+
 ```
 python example/lcio_particle_gun.py
 ```
