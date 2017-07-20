@@ -23,7 +23,7 @@ then log onto your github account. Navigate to settings, SSH and GPG keys, then 
 Then go back to your home directory 
 ```
 
-git copy git@github.com:Bristol-SiD-Development/DD4HEP.git
+git clone git@github.com:Bristol-SiD-Development/DD4HEP.git
 ```
  
 
