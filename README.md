@@ -45,9 +45,9 @@ git clone git@github.com:iLCSoft/lcgeo.git
 Remove some unfinished(?) calorimeter files:
 ```
 cd ~
-rm lcgeo/detector/calorimeter/SHcal*
-rm lcgeo/detector/calorimeter/SEcal*
-rm lcgeo/detector/CaloTB/CaloPrototype*
+rm detector/calorimeter/SHcal*
+rm detector/calorimeter/SEcal*
+rm detector/CaloTB/CaloPrototype*
 ```
 Create the build directory and move to it:
 ```
