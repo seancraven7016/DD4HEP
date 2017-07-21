@@ -29,9 +29,9 @@ fi
 
 #   -------------------------------------------------------------------------------------------------------------------------------------
 
-# Initialisation taken from /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09/init_ilcsoft.sh and modified
+# Initialisation taken from /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh and modified
 
-export ILCSOFT=/cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-09
+export ILCSOFT=/cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10
 
 
 #--------------------------------------------------------------------------------
@@ -165,7 +165,7 @@ export LD_LIBRARY_PATH="$GSL_HOME/lib:$LD_LIBRARY_PATH"
 #     CED
 #--------------------------------------------------------------------------------
 export PATH="$ILCSOFT/CED/v01-09-02/bin:$PATH"
-export LD_LIBRARY_PATH="/cvmfs/ilc.desy.de/sw/x86_64_gcc44_sl6/v01-17-09/CED/v01-09-02/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/cvmfs/ilc.desy.de/sw/x86_64_gcc44_sl6/v01-17-10/CED/v01-09-02/lib:$LD_LIBRARY_PATH"
 
 
 #--------------------------------------------------------------------------------
