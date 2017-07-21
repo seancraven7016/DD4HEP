@@ -84,7 +84,7 @@ python example/lcio_particle_gun.py
 ```
 Run the simulation with the default geometry and the example input particles you have just generated:
 ```
-ddsim --compactFile=SiD/compact/SiD_o1_v01/SiD_o1_v01.xml --runType=batch --inputFile mcparticles.slcio -N=1 --outputFile=testSiD_o1_v01.slcio
+ddsim --compactFile=SiD/compact/SiD_o1_v01/SiD_o1_v03.xml --runType=batch --inputFile mcparticles.slcio -N=1 --outputFile=testSiD_o1_v03.slcio
 ```
 If this has worked, you will now have a file named testSiD_o1_v01.slcio. You can find out what data this output file contains in summary:
 ```
