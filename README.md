@@ -98,7 +98,13 @@ You should now be ready to try running a reconstruction.
 
 ## Running an example reconstruction
 
-Now navigate into your local summer-student repository and find SiDReconstruction_test160628.xml. You will need to edit this file so that the relevant file paths are correct for your local files. The LCIO input file is the 'testSiD_o1_v01.slcio' you just generated. For the compact files, you can use either those in lcgeo/SiD or in summer-student/compact. You can then run the reconstruction:
+Now navigate into your local summer-student repository and find SiDReconstruction_test160628.xml. You will need to edit this file so that the relevant file paths are correct for your local files. The LCIO input file is the 'testSiD_o1_v01.slcio' you just generated. For the compact files, you can use either those in lcgeo/SiD or in summer-student/compact.You must relog and run 
+```
+ source /cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/init_ilcsoft.sh
+```
+only 
+
+You can then run the reconstruction:
 ```
 Marlin SiDReconstruction_test160628.xml
 ```
