@@ -157,3 +157,45 @@ This will produce a final .slcio file containing the reconstructed tracks, which
 # Analysis
 
 Analysis scripts written by Josh Tingey can be found in the analysis directory. See analysis/README.md for information and instructions. (Note: compatibility work on Josh's scripts is still a work in progress.)
+
+Alternative
+Our example analysis code can be found here. From lcgeo do
+cd ../
+```wget https://twiki.ppe.gla.ac.uk/pub/LinearCollider/GlaSiDGettingStarted/TrackAna.tgz
+tar -zxvf TrackAna.tgz
+ls Tracking/
+```
+and you will see
+```
+CMakeLists.txt
+gear_sid.xml  
+HitResiduals.xml
+include/fpcompare.h
+include/LinkDef.h  
+include/HitResiduals.h
+src/HitResiduals.cc
+```
+Assuming you are in the lcgeo directory, and you have initialised your session as above, let us compile the example with:
+```
+cd Tracking
+mkdir build lib
+cd build
+cmake -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_C_COMPILER=`which gcc` \
+  -DILCUTIL_DIR=/cvmfs/ilc.desy.de/sw/x86_64_gcc48_sl6/v01-17-10/ilcutil/v01-03/ -C $ILCSOFT/ILCSoft.cmake ..
+make -j4 install
+```
+Edit HitResiduals.xml to make sure you have the right input file and detector model. Make the new processor known to Marlin
+```
+cd ../
+CWD=`pwd`
+```
+you can also maually put in the file path
+```
+export MARLIN_DLL=$MARLIN_DLL:$CWD/lib/libTrackAna.so
+```
+ALERT! Do this export only once, else Marlin will complain about duplicate libraries!
+Then run your new processor with
+```
+Marlin HitResiduals.xml
+```
+This will produce a file named hitresiduals.root which contains something like this:
